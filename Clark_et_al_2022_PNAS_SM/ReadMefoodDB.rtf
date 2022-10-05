@@ -1,0 +1,60 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\froman\fcharset0 TimesNewRomanPSMT;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 Read me file: 
+\f1\b0 \
+Contains description of how to run scripts that (a) estimate environmental impact and nutritional quality of food products, and (b) create figures and run analyses for the paper.\
+\
+
+\f0\b Description of how to run files:
+\f1\b0 \
+The scripts are labelled with a number, then a descriptive name. \
+Scripts starting \'930.0\'94 contain functions used in the other scripts.\
+From there, to run the analyses and create the figures in the paper, run the scripts in numeric order.\
+E.g. start with the scripts \'931.0\'94 (there are two of these, order does not matter), proceed to the scripts \'933.0\'94, then \'933.1\'94, then \'934.0\'94, etc.\
+\
+The scripts are commented throughout, and contain descriptions of what the code is doing and how it works.\
+\
+The scripts also create additional folders when running them. These folders are used to store managed data, for instance, estimates of each product\'92s percent composition, estimated environmental impact and nutrition score, data used when validating the method, tables, and figures.\
+\
+
+\f0\b Description of food database: \
+\pard\pardeftab720\ri720\partightenfactor0
+
+\f1\b0 \cf0 The data extract used in the analysis was collected from eight food retailers in the UK or Ireland over a two-week period in October 2019. All data was collected from the website of one of these food retailers. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \
+
+\f1\b0 The food database in this folder is anonymized for liability reasons. To request the a non-anonymized version of the database for replication, please contact: 
+\f2\fs22 foodDBaccess@ndph.ox.ac.uk
+\f1\fs24 \
+\pard\pardeftab720\ri720\partightenfactor0
+\cf0 \
+The anonymization means that some parts of the script will not work properly (e..g identifying retailers based on the URL of the product). \
+\
+\pard\pardeftab720\ri720\partightenfactor0
+
+\f0\b \cf0 Using the script on other food databases to estimate the environmental and nutritional impact of additional food products:\
+\pard\pardeftab720\ri720\partightenfactor0
+
+\f1\b0 \cf0 The scripts contained in this folder were built on product information using foodDB. Running these scripts on other food databases is possible, but the data will need to be formatted so that it matches the format of the files \'93categories.csv\'94 and \'93products.csv\'94. The \'93products.csv\'94 file has all data in the serving columns removed (see above), but contains these columns for formatting purposes. The file \'93serving_example.csv\'94 contains an example of the data that was contained in these columns for purposes of replication or if using these scripts to estimate the impacts of other food products.\
+\
+The food databases do not necessarily need to contain nutrition information for these scripts to run or to estimate the nutrition impact score of different products. This is because the scripts update missing nutrition information based on the estimated composition of a product and the nutrition composition of different ingredients. However, it is highly recommended that nutrition information is provided because this will increase the accuracy of the nutrition quality score of a product.\
+\
+\pard\pardeftab720\ri720\partightenfactor0
+
+\f0\b \cf0 Note on the Figure Scripts:\
+\pard\pardeftab720\ri720\partightenfactor0
+
+\f1\b0 \cf0 The figure scripts will not run properly with the anonymized data. This is because they are dependent on identifying products in certain Retailers, Departments, Aisles, Shelves, etc.  \
+\
+\
+\
+}
